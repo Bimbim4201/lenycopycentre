@@ -8,92 +8,89 @@
 </head>
 <body class="font-sans bg-gray-50 text-gray-800">
 
-  <!-- Navbar -->
-  <header class="flex justify-between items-center p-6 border-b bg-white shadow-sm">
-    <div class="font-bold text-xl">
-      <img src="lgo fotokopi.jpeg" alt="Logo Leny Copy Centre" class="h-20 w-auto">
+<!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4 md:p-5">
+      <div class="flex items-center space-x-3">
+        <img src="lgo fotokopi.jpeg" alt="Logo Leny Copy Centre" class="h-14 rounded-lg">
+        <span class="font-bold text-xl md:text-2xl text-gray-700">Leny Copy Centre</span>
+      </div>
+      <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
+        <a href="#home" class="hover:text-blue-600 transition">Home</a>
+        <a href="#tentang" class="hover:text-blue-600 transition">Tentang Kami</a>
+        <a href="#layanan" class="hover:text-blue-600 transition">Layanan</a>
+        <a href="#jam" class="hover:text-blue-600 transition">Jam Operasional</a>
+        <a href="#kontak" class="hover:text-blue-600 transition">Kontak</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden border px-3 py-1 rounded-lg hover:bg-gray-100 transition">☰</button>
     </div>
-    <nav class="hidden md:flex space-x-8 text-gray-700">
-      <a href="#home" class="hover:text-blue-600">HOME</a>
-      <a href="#tentang" class="hover:text-blue-600">TENTANG KAMI</a>
-      <a href="#layanan" class="hover:text-blue-600">LAYANAN</a>
-      <a href="#jam" class="hover:text-blue-600">JAM OPERASIONAL</a>
-    </nav>
-    <button id="menuBtn" class="md:hidden border px-3 py-1 rounded">MENU</button>
   </header>
 
   <!-- Mobile Menu -->
-  <div id="mobileMenu" class="hidden flex-col items-center bg-white shadow-md p-4 md:hidden">
-    <a href="#home" class="py-2">HOME</a>
-    <a href="#tentang" class="py-2">TENTANG KAMI</a>
-    <a href="#layanan" class="py-2">LAYANAN</a>
+  <div id="mobileMenu" class="hidden flex-col items-center bg-white shadow-md p-4 md:hidden mt-20 space-y-3">
+    <a href="#home" class="hover:text-blue-600">Home</a>
+    <a href="#tentang" class="hover:text-blue-600">Tentang Kami</a>
+    <a href="#layanan" class="hover:text-blue-600">Layanan</a>
+    <a href="#jam" class="hover:text-blue-600">Jam Operasional</a>
+    <a href="#kontak" class="hover:text-blue-600">Kontak</a>
   </div>
 
-  <!-- Hero -->
-  <section id="home" class="text-center py-16 bg-white">
-    <h1 class="text-3xl md:text-4xl font-bold">LENY COPY CENTRE</h1>
-    <p class="text-gray-600 mt-2">Percetakan Cepat, Tepat, dan Berkualitas</p>
+<!-- Hero -->
+  <section id="home" class="text-center py-28 md:py-36 bg-gradient-to-b from-blue-50 to-white mt-20">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800">LENY COPY CENTRE</h1>
+    <p class="text-gray-600 mt-3 text-lg">Percetakan Cepat, Tepat, dan Berkualitas</p>
+    <img src="poster fotokopi.jpeg" alt="Poster Leny Copy Centre" class="mx-auto mt-8 rounded-2xl shadow-lg w-full max-w-3xl">
   </section>
-  <img src="poster fotokopi.jpeg" alt="Poster Leny Copy Centre" 
-       class="mx-auto mb-6 rounded-lg shadow-lg w-full max-w-3xl">
+  
   <!-- Tentang Kami -->
-  <section id="tentang" class="text-center py-12 px-6 bg-gray-100">
-    <h2 class="text-2xl font-bold mb-2">TENTANG KAMI</h2>
-    <p class="max-w-2xl mx-auto text-gray-700">
+  <section id="tentang" class="text-center py-16 bg-gray-100">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">Tentang Kami</h2>
+    <p class="max-w-2xl mx-auto text-gray-700 leading-relaxed">
       Leny Copy Centre menyediakan layanan percetakan modern dengan hasil berkualitas tinggi. 
       Kami berkomitmen untuk memberikan pelayanan terbaik dengan waktu pengerjaan cepat dan hasil maksimal.
     </p>
   </section>
 
-  <!-- Layanan -->
-<section id="layanan" class="text-center py-12 bg-gray-50">
-    <h2 class="text-2xl font-bold mb-2">MELAYANI DAN MENYEDIAKAN PERALATAN KANTOR</h2>
-    <h2 class="text-lg mb-6 text-gray-600">BERIKUT LAYANAN JASA YANG KAMI SEDIAKAN</h2>
+ <!-- Layanan -->
+  <section id="layanan" class="text-center py-16 bg-white">
+    <h2 class="text-3xl font-bold text-gray-800 mb-3">Layanan Kami</h2>
+    <p class="text-gray-600 mb-10">Kami melayani dan menyediakan berbagai kebutuhan kantor Anda</p>
   
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto px-6">
-      <!-- PHOTOCOPY -->
-      <div class="bg-white border rounded-2xl p-4 shadow hover:shadow-lg transition">
-        <img src="fotokopi.png" alt="Photocopy" class="h-40 w-full object-cover rounded-lg mb-3">
-        <h3 class="text-lg font-semibold">PHOTOCOPY</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+      <!-- Card Template -->
+      <div class="bg-gray-50 border rounded-2xl p-5 shadow-sm hover:shadow-xl transition transform hover:-translate-y-1">
+        <img src="fotokopi.png" alt="Photocopy" class="h-40 w-full object-cover rounded-lg mb-4">
+        <h3 class="text-lg font-semibold text-gray-800">Photocopy</h3>
       </div>
-  
-      <!-- SCAN DOKUMEN -->
-      <div class="bg-white border rounded-2xl p-4 shadow hover:shadow-lg transition">
-        <img src="scandocument.jpg" alt="Scan Dokumen" class="h-40 w-full object-cover rounded-lg mb-3">
-        <h3 class="text-lg font-semibold">SCAN DOKUMEN</h3>
+      <div class="bg-gray-50 border rounded-2xl p-5 shadow-sm hover:shadow-xl transition transform hover:-translate-y-1">
+        <img src="scandocument.jpg" alt="Scan Dokumen" class="h-40 w-full object-cover rounded-lg mb-4">
+        <h3 class="text-lg font-semibold text-gray-800">Scan Dokumen</h3>
       </div>
-  
-      <!-- LAMINATING -->
-      <div class="bg-white border rounded-2xl p-4 shadow hover:shadow-lg transition">
-        <img src="laminating.jpg" alt="Laminating" class="h-40 w-full object-cover rounded-lg mb-3">
-        <h3 class="text-lg font-semibold">LAMINATING</h3>
+      <div class="bg-gray-50 border rounded-2xl p-5 shadow-sm hover:shadow-xl transition transform hover:-translate-y-1">
+        <img src="laminating.jpg" alt="Laminating" class="h-40 w-full object-cover rounded-lg mb-4">
+        <h3 class="text-lg font-semibold text-gray-800">Laminating</h3>
       </div>
-  
-      <!-- PRINT -->
-      <div class="bg-white border rounded-2xl p-4 shadow hover:shadow-lg transition">
-        <img src="print.jpg" alt="Print" class="h-40 w-full object-cover rounded-lg mb-3">
-        <h3 class="text-lg font-semibold">PRINT</h3>
+      <div class="bg-gray-50 border rounded-2xl p-5 shadow-sm hover:shadow-xl transition transform hover:-translate-y-1">
+        <img src="print.jpg" alt="Print" class="h-40 w-full object-cover rounded-lg mb-4">
+        <h3 class="text-lg font-semibold text-gray-800">Print</h3>
       </div>
-  
-      <!-- BURNING CD -->
-      <div class="bg-white border rounded-2xl p-4 shadow hover:shadow-lg transition">
-        <img src="burncd.jpg" alt="Burning CD" class="h-40 w-full object-cover rounded-lg mb-3">
-        <h3 class="text-lg font-semibold">BURNING CD</h3>
+      <div class="bg-gray-50 border rounded-2xl p-5 shadow-sm hover:shadow-xl transition transform hover:-translate-y-1">
+        <img src="burncd.jpg" alt="Burning CD" class="h-40 w-full object-cover rounded-lg mb-4">
+        <h3 class="text-lg font-semibold text-gray-800">Burning CD</h3>
       </div>
-  
-      <!-- PENJILIDAN -->
-      <div class="bg-white border rounded-2xl p-4 shadow hover:shadow-lg transition">
-        <img src="penjilidan.jpg" alt="Penjilidan" class="h-40 w-full object-cover rounded-lg mb-3">
-        <h3 class="text-lg font-semibold">PENJILIDAN</h3>
+      <div class="bg-gray-50 border rounded-2xl p-5 shadow-sm hover:shadow-xl transition transform hover:-translate-y-1">
+        <img src="penjilidan.jpg" alt="Penjilidan" class="h-40 w-full object-cover rounded-lg mb-4">
+        <h3 class="text-lg font-semibold text-gray-800">Penjilidan</h3>
       </div>
     </div>
   </section>
   
 
   <!-- Kontak Person -->
-  <section id="kontak" class="text-center py-12 bg-gray-100">
-    <h2 class="text-2xl font-bold mb-6">KONTAK PERSON</h2>
-    <div class="flex flex-col items-center space-y-4">
+  <section id="kontak" class="text-center py-16 bg-gray-100">
+    <h2 class="text-3xl font-bold mb-6 text-gray-800">Hubungi Kami</h2>
+    <div class="flex flex-col items-center space-y-5">
+      
       <!-- WhatsApp interactive button -->
       <div class="flex items-center space-x-3">
         <button id="whatsappBtn"
@@ -134,16 +131,16 @@
     </div>
   </section>
 
-<!-- Jam Operasional -->
-<section id="jam" class="text-center py-12 bg-white">
-    <h2 class="text-2xl font-bold mb-4">JAM OPERASIONAL</h2>
-    <div class="text-gray-700 space-y-2">
-      <p><strong>SENIN - JUMAT:</strong> 06.00 - 22.00</p>
-      <p><strong>SABTU:</strong> 06.00 - 20.00</p>
-      <p><strong>MINGGU:</strong> 06.00 - 22.00</p>
+  <!-- Jam Operasional -->
+  <section id="jam" class="text-center py-16 bg-white">
+    <h2 class="text-3xl font-bold mb-4 text-gray-800">Jam Operasional</h2>
+    <div class="text-gray-700 space-y-2 text-lg">
+      <p><strong>Senin - Jumat:</strong> 06.00 - 22.00</p>
+      <p><strong>Sabtu:</strong> 06.00 - 20.00</p>
+      <p><strong>Minggu:</strong> 06.00 - 22.00</p>
     </div>
-  </section>
-
+  </section> 
+  
   <!-- Google Maps -->
   <section id="maps" class="text-center py-5">
     <h2 class="text-2xl font-bold mb-4">GOOGLE MAPS</h2>
@@ -156,8 +153,8 @@
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-6 bg-white border-t text-gray-600">
-    © 2025 LENY COPY CENTRE
+  <footer class="text-center py-6 bg-white border-t text-gray-600 text-sm">
+    © 2025 Leny Copy Centre — All Rights Reserved
   </footer>
 
   <script>
@@ -206,3 +203,4 @@
 
 </body>
 </html>
+
